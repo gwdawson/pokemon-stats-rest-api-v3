@@ -1,7 +1,7 @@
-# Project Name
+# pokemon-api-v3
 
 ```
-write a short description about your project here.
+pokemon-api-v3 is a RESTful api created as a solo project to increase my knowledge of Express.js.
 
 
 
