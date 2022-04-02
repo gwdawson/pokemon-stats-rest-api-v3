@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../index.js');
+const app = require('../app/index');
 
 describe('Testing for the GET /api endpoint', () => {
   test('should return a json object with the keys {status, message, endpoints}', async () => {
