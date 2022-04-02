@@ -1,7 +1,7 @@
 {
   "name": "pokemon-api-v3",
   "version": "3.0.0",
-  "description": "",
+  "description": "A RESTful api created as a solo project to increase my knowledge of Express.js, Node-Postgres, Jest and Supertest.",
   "main": "index.js",
   "scripts": {
     "start": "node listen.js",
