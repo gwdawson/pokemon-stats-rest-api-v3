@@ -1,0 +1,19 @@
+{
+  "name": "pokemon-api-v3",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwdawson/pokemon-api-v3.git"
+  },
+  "author": "Gareth Dawson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwdawson/pokemon-api-v3/issues"
+  },
+  "homepage": "https://github.com/gwdawson/pokemon-api-v3#readme"
+}
