@@ -77,9 +77,6 @@ const seed = async () => {
   ARRAY ['Torrent', 'Rain Dish'],
   ARRAY ['HP 79', 'Attack 83', 'Defense 100', 'SAttack 85', 'SDefense 105', 'Speed 78', 'Total 530']
   );`);
-
-  const pokemon = await database.query('SELECT * FROM pokemon;');
-  fs.writeFile('database/view-database.json', JSON.stringify(pokemon.rows, null, 2));
 };
 
 module.exports = seed;
