@@ -1,0 +1,16 @@
+name: run-tests
+
+on: [push]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout and clone repo
+        uses: actions/checkout@v3
+
+      - name: install dependencies
+        run: npm install
+
+      - name: run the test script
+        run: npm test
