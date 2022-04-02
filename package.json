@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gwdawson/pokemon-api-v3#readme",
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
   }
 }
