@@ -12,5 +12,9 @@ jobs:
       - name: install dependencies
         run: npm install
 
+      - name: set enviroment variables
+        run: echo 'PGDATABASE=pokemon_api_v3' > ./database/.env.development
+        run: echo 'PGDATABASE=pokemon_api_v3_test' > ./database/.env.test
+
       - name: run the test script
         run: npm test
