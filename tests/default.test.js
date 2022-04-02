@@ -23,7 +23,7 @@ describe('Testing for the GET /api endpoint', () => {
 });
 
 describe('Testing for the ALL /* endpoint', () => {
-  test('should return a json objext with the keys {status, message, default}', async () => {
+  test('should return a json object with the keys {status, message, default}', async () => {
     const { body } = await request(app).get('/invalid');
     expect(body).toHaveProperty('status');
     expect(body).toHaveProperty('message');
