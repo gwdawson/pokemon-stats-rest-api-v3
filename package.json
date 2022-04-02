@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node listen.js",
     "start:dev": "nodemon listen.js",
+    "database:setup": "psql -f ./database/setup.sql",
+    "database:seed": "node ./database/run-seed.js",
     "test": "jest --passWithNoTests --verbose",
     "prepare": "husky install"
   },
@@ -26,6 +28,8 @@
     "supertest": "^6.2.2"
   },
   "dependencies": {
-    "express": "^4.17.3"
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "pg": "^8.7.3"
   }
 }
