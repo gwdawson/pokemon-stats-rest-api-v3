@@ -12,7 +12,7 @@ TODO
 
 ## Project Status
 
-`in progress` [Test the live API](https://pokemon-api-v3.herokuapp.com/api)
+`work in progress`
 
 ## Tools and Technologies
 
@@ -28,11 +28,14 @@ TODO
 ```sh
 git clone https://github.com/gwdawson/pokemon-api-v3.git
 cd pokemon-api-v3
+
 echo 'PGDATABASE=pokemon_api_v3' > ./env/.env.development
 echo 'PGDATABASE=pokemon_api_v3_test' > ./env/.env.test
+
 npm install
 npm run database:setup
 npm run database:seed
+
 npm test
 ```
 
