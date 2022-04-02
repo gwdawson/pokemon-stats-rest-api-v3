@@ -1,5 +1,5 @@
-const { defaultSuccess, defaultError } = require('./controllers/default.controller.js');
-const { getAllPokemon } = require('./controllers/pokemon.controller.js');
+const { defaultSuccess, defaultError } = require('../controllers/default.controller');
+const { getAllPokemon } = require('../controllers/pokemon.controller');
 const favicon = require('serve-favicon');
 const express = require('express');
 const fs = require('fs/promises');
@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use(favicon(`${__dirname}/images/favicon.png`));
+app.use(favicon(`${__dirname}/../images/favicon.png`));
 
 app.use((req, res, next) => {
   const { method, originalUrl } = req;
