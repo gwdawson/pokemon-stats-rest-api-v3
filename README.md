@@ -12,6 +12,15 @@ pokemon-api-v3 is a RESTful api created as a solo project to increase my knowled
 
 `in progress`
 
+## Tools and Technologies
+
+```
+• express
+• node-postgres
+• jest
+• supertest
+```
+
 ## Setup
 
 ```sh
