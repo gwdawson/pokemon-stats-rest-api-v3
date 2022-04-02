@@ -17,5 +17,10 @@ jobs:
           echo 'PGDATABASE=pokemon_api_v3' > ./database/.env.development
           echo 'PGDATABASE=pokemon_api_v3_test' > ./database/.env.test
 
+      - name: setup the database
+        run: |
+          npm run database:setup
+          npm run database:seed
+
       - name: run the test script
         run: npm test
