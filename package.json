@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node listen.js",
+    "test": "jest --passWithNoTests --verbose",
     "start:dev": "npm run database:seed; nodemon listen.js",
     "database:setup": "psql -f ./database/setup.sql",
     "database:seed": "node ./database/run-seed.js",
-    "test": "jest --passWithNoTests --verbose",
+    "seed:prod": "NODE_ENV=production DATABASE_URL=$(heroku config:get DATABASE_URL) npm run database:seed",
     "prepare": "husky install"
   },
   "repository": {
