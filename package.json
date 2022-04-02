@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon listen.js",
+    "start": "node listen.js",
+    "start:dev": "nodemon listen.js",
     "test": "jest --passWithNoTests --verbose",
     "prepare": "husky install"
   },
