@@ -21,10 +21,20 @@ describe('Testing for the GET /api/pokemon endpoint', () => {
     expect(body.message).toHaveProperty('pokemon');
     expect(body.message).toEqual({
       pokemon: expect.arrayContaining([
-        { pokemon_id: 1, pokemon_name: 'Bulbasaur', pokemon_generation: 1 },
-        { pokemon_id: 4, pokemon_name: 'Charmander', pokemon_generation: 1 },
-        { pokemon_id: 7, pokemon_name: 'Squirtle', pokemon_generation: 1 },
+        expect.objectContaining({
+          pokedex: expect.any(Number),
+          name: expect.any(String),
+          type: expect.any(Array),
+          abilities: expect.any(Array),
+          stats: expect.any(Array),
+        }),
       ]),
+
+      // expect.arrayContaining([
+      //   expect.objectContaining({ pokedex: 1, name: 'Bulbasaur' }),
+      //   expect.objectContaining({ pokedex: 4, name: 'Charmander' }),
+      //   expect.objectContaining({ pokedex: 7, name: 'Squirtle' }),
+      // ]),
     });
   });
 });
