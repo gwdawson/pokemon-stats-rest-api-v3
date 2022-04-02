@@ -18,7 +18,7 @@ describe('Testing for the GET /api endpoint', () => {
   });
   test('response.endpoints should equal []', async () => {
     const { body } = await request(app).get('/api');
-    expect(body.endpoints).toEqual([]);
+    expect(body.endpoints).toEqual(['GET /api/pokemon']);
   });
 });
 
