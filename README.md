@@ -11,7 +11,7 @@ TODO
 
 ## Project Status
 
-`in progress`
+`in progress` [Test the live API](https://pokemon-api-v3.herokuapp.com/api)
 
 ## Tools and Technologies
 
