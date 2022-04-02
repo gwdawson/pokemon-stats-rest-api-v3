@@ -10,11 +10,20 @@ write a short description about your project here.
 
 ## Project Status
 
-_in progress_.
+`in progress`
 
 ## Setup
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+```sh
+git clone https://github.com/gwdawson/pokemon-api-v3.git
+cd pokemon-api-v3
+echo 'PGDATABASE=pokemon_api_v3' > ./database/.env.development
+echo 'PGDATABASE=pokemon_api_v3_test' > ./database/.env.test
+npm install
+npm run database:setup
+npm run database:seed
+npm test
+```
 
 ## Usage
 
@@ -22,7 +31,7 @@ How does one go about using it?
 
 ## Acknowledgements
 
-This project was inspired by...
+This project was inspired by [PokéAPI](https://pokeapi.co/)
 
 ## Contact
 
