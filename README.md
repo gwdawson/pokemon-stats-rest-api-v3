@@ -7,7 +7,6 @@ pokemon-api-v3 is a RESTful api created as a solo project to increase my knowled
 ```
 TODO
 - Fix workflow run-tests (fails test, no db setup)
-- Fix heroku Error: connect ECONNREFUSED 127.0.0.1:5432
 ```
 
 ## Project Status
