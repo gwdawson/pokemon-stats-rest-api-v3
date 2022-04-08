@@ -4,11 +4,6 @@
 pokemon-api-v3 is a RESTful api created as a solo project to increase my knowledge of Express.js.
 ```
 
-```
-TODO
-- Fix workflow run-tests (fails test, no db setup)
-```
-
 ## Project Status
 
 `work in progress`
