@@ -9,15 +9,15 @@ jobs:
       - name: checkout and clone repo
         uses: actions/checkout@v2
 
-      - name: install dependencies
-        run: npm install
-
       - name: setup postgres
         uses: harmon758/postgresql-action@v1
         with:
           postgresql db: pokemon_api_v3_test
-          postgresql user: pokemon_api_v3_test
-          postgresql password: pokemon_api_v3_test
+          postgresql user: username
+          postgresql password: password
+
+      - name: install dependencies
+        run: npm install
 
       - name: run the test
         run: npm test
