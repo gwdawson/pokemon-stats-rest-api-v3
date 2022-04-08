@@ -13,8 +13,8 @@ jobs:
         uses: harmon758/postgresql-action@v1
         with:
           postgresql db: pokemon_api_v3_test
-          postgresql user: username
-          postgresql password: password
+          # postgresql user: username
+          # postgresql password: password
 
       - name: install dependencies
         run: npm install
