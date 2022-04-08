@@ -9,11 +9,14 @@ jobs:
       - name: checkout and clone repo
         uses: actions/checkout@v2
 
+      - name: install dependencies
+        run: npm install
+
       - name: setup postgres
         uses: harmon758/postgresql-action@v1
 
-      - name: install dependencies
-        run: npm install
+      - name: setup database
+        run: npm run database:setup
 
       - name: run the test
         run: npm test
