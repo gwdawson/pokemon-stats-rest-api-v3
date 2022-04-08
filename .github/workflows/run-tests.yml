@@ -15,7 +15,7 @@ jobs:
       - name: setup postgres
         uses: harmon758/postgresql-action@v1
         with:
-          postgres db: pokemon_api_v3_test
+          postgresql db: pokemon_api_v3_test
 
       - name: run the test script
         run: npm test
