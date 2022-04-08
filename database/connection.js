@@ -20,6 +20,6 @@ const config =
       }
     : {};
 
-const database = new Pool();
+const database = new Pool(config);
 
 module.exports = database;
