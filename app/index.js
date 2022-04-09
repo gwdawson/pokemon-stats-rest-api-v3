@@ -1,5 +1,5 @@
 const { defaultSuccess, defaultError } = require('../controllers/default.controller');
-const { getAllPokemon } = require('../controllers/pokemon.controller');
+const { getAllPokemon, getPokemonByPokedex } = require('../controllers/pokemon.controller');
 const favicon = require('serve-favicon');
 const express = require('express');
 const fs = require('fs/promises');
@@ -18,6 +18,8 @@ app.use((req, res, next) => {
 app.get('/api', defaultSuccess);
 
 app.get('/api/pokemon', getAllPokemon);
+
+app.get('/api/pokemon/:pokedex', getPokemonByPokedex);
 
 app.all('/*', defaultError);
 
