@@ -1,4 +1,4 @@
-## [Live API](https://pokemon-api-v3.herokuapp.com/api)
+# [Live API](https://pokemon-api-v3.herokuapp.com/api)
 
 ```
 This app was built with the following Tools and Technologies:
