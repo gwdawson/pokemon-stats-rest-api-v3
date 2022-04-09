@@ -29,12 +29,31 @@ describe('Testing for the GET /api/pokemon endpoint', () => {
           stats: expect.any(Array),
         }),
       ]),
+    });
+  });
+});
 
-      // expect.arrayContaining([
-      //   expect.objectContaining({ pokedex: 1, name: 'Bulbasaur' }),
-      //   expect.objectContaining({ pokedex: 4, name: 'Charmander' }),
-      //   expect.objectContaining({ pokedex: 7, name: 'Squirtle' }),
-      // ]),
+describe('Testing for the GET /api/pokemon/:pokedex endpoint', () => {
+  test('should return a json object with the keys {status, message}', async () => {
+    const { body } = await request(app).get('/api/pokemon');
+    expect(body).toHaveProperty('status');
+    expect(body).toHaveProperty('message');
+  });
+  test('response.status should equal 200', async () => {
+    const { body } = await request(app).get('/api/pokemon');
+    expect(body.status).toBe(200);
+  });
+  test('response.message should equal { pokemon }', async () => {
+    const { body } = await request(app).get('/api/pokemon/6');
+    console.log(body.message);
+    expect(body.message).toEqual({
+      pokemon: expect.objectContaining({
+        pokedex: 6,
+        name: 'Charizard',
+        type: ['Fire'],
+        abilities: ['Blaze', 'Solar Power'],
+        stats: ['HP 78', 'Attack 84', 'Defense 78', 'SAttack 109', 'SDefense 85', 'Speed 100', 'Total 534'],
+      }),
     });
   });
 });
