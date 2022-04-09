@@ -45,7 +45,6 @@ describe('Testing for the GET /api/pokemon/:pokedex endpoint', () => {
   });
   test('response.message should equal { pokemon }', async () => {
     const { body } = await request(app).get('/api/pokemon/6');
-    console.log(body.message);
     expect(body.message).toEqual({
       pokemon: expect.objectContaining({
         pokedex: 6,
