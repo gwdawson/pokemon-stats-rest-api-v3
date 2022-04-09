@@ -9,11 +9,11 @@ app.use(express.json());
 
 app.use(favicon(`${__dirname}/../images/favicon.png`));
 
-app.use((req, res, next) => {
-  const { method, originalUrl } = req;
-  const data = `A (${method}) request was made to (${originalUrl}) at ${new Date()}\n`;
-  fs.appendFile(`./logs/request.log`, data).then(() => next());
-});
+// app.use((req, res, next) => {
+//   const { method, originalUrl } = req;
+//   const data = `A (${method}) request was made to (${originalUrl}) at ${new Date()}\n`;
+//   fs.appendFile(`./logs/request.log`, data).then(() => next());
+// });
 
 app.get('/api', defaultSuccess);
 
